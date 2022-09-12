@@ -1,0 +1,14 @@
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make run
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 5x7-font.o uimain.o
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> run uimain.c 
+If 'run' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf run
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make run
+make: Nothing to be done for 'run'.
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> 

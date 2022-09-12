@@ -1,0 +1,35 @@
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make run
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 5x7-font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: draw_chars.o: in function `print_char_11x16':
+/home/student/luceroWrk/arch1-project-zero-malucero3/draw_chars.c:17: undefined reference to `font_11x16'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/luceroWrk/arch1-project-zero-malucero3/draw_chars.c:17: undefined reference to `font_11x16'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make run
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 5x7-font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: draw_chars.o: in function `print_char_11x16':
+/home/student/luceroWrk/arch1-project-zero-malucero3/draw_chars.c:17: undefined reference to `font_11x16'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/luceroWrk/arch1-project-zero-malucero3/draw_chars.c:17: undefined reference to `font_11x16'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> make run
+
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 5x7-font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: draw_chars.o: in function `print_char_11x16':
+/home/student/luceroWrk/arch1-project-zero-malucero3/draw_chars.c:17: undefined reference to `font_11x16'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/luceroWrk/arch1-project-zero-malucero3/draw_chars.c:17: undefined reference to `font_11x16'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> student@systems-vm:~/luceroWrk/arch1-project-zero-malucero3> 
