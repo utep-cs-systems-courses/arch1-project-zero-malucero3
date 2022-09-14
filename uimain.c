@@ -31,7 +31,6 @@ int main()
       break;
     case 'a':
       puts("You selected arrow:");
-      for (char c = 'A'; c < 'D'; c++)
 	print_arrow(5,5);
       break;
     case 'q':
